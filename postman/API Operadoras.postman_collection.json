@@ -1,0 +1,107 @@
+{
+	"info": {
+		"_postman_id": "59e81e19-3e11-4d5e-9298-8235f3d013b4",
+		"name": "API Operadoras",
+		"description": "Coleção para testar a API de busca de operadoras de saúde  \nDesenvolvida com Flask e Vue.js",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "43542888",
+		"_collection_link": "https://speeding-resonance-6076728.postman.co/workspace/7151a14c-8eb6-4575-852a-530f61acbcaf/collection/43542888-59e81e19-3e11-4d5e-9298-8235f3d013b4?action=share&source=collection_link&creator=43542888"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/busca?termo=saúde&limite=70",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/busca?termo=saúde&limite=70",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"busca"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "saúde"
+						},
+						{
+							"key": "limite",
+							"value": "70"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/busca?termo=123456",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/busca?termo=123456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"busca"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "123456"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5000/api/busca?termo=ampla&limite=90",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5000/api/busca?termo=ampla&limite=90",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"busca"
+					],
+					"query": [
+						{
+							"key": "termo",
+							"value": "ampla"
+						},
+						{
+							"key": "limite",
+							"value": "90"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
